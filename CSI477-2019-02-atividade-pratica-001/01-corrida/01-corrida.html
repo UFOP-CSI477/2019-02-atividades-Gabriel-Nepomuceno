@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+  <head>
+    <meta charset="utf-8" content="width=device-width, initial-scale=1">
+    <title>Campeonato de Carrinho de Rolimã</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/classes.css">
+
+
+    <script src="./js/validacao.js"></script>
+    <script src="./js/jquery-3.4.1.js"></script>
+
+
+  </head>
+  <body>
+    <div class="bg-image"></div>
+      <h1 class="centralizar full-width">CAMPEONATO DE CARRINHO DE ROLIMÃ</h1>
+      <h2 class="centralizar">Dados</h2>
+      <form name="dados">
+
+          <div id="grupo1" class="centralizar form-group">
+            <label for="nome" id="label1">Nome: </label>
+            <input type="text" name="nome" id="nome" value="" class="form-control center-block">
+          </div>
+    
+          <div id="alerta1" class="alert alert-danger center-block" role="danger" style="display: none">
+            Preencha o primeiro valor corretamente!       
+          </div>
+    
+          <div id="grupo2" class="centralizar form-group">
+            <label for="tempo" id="label2">Tempo(em segundos)</label>
+            <input type="number" name="tempo" id="tempo" value="" class="form-control center-block">
+          </div>
+    
+          <div id="alerta2" class="alert alert-danger center-block" role="danger" style="display: none">
+              Preencha o segundo valor corretamente!  
+          </div>
+          <br>
+          <div id="wrapper">
+            <input type="button" id="inserir" value="Inserir" onclick="insert()" class="btn btn-primary ">
+            <input type="button" style="margin-left: 5%;" value="Resultados" onclick="resultado()" class="btn btn-primary btn-success ">
+            <input type="button" style="margin-left:5%;" value="Limpar" onclick="limpar()" class="btn btn-primary btn-warning">
+          </div>
+          <br>
+          <div id="alerta3" class="alert alert-danger center-block" role="danger" style="display: none;text-align:center">
+              Número de participantes excedido.   
+          </div>
+        </form>
+        <br>
+        <table id = "myTable" class="table table-hover table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Posição</th>
+                <th scole="col">Largada</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Tempo</th>
+                <th scope="col">Situação</th>
+              </tr>
+            </thead>
+            <tbody id="corpo">
+
+            </tbody>
+          </table>
+
+
+
+
+  </body>
+</html>

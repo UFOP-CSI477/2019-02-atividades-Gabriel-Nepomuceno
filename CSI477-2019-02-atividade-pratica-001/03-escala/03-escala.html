@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+
+<head>
+  <meta charset="utf-8" content="width=device-width, initial-scale=1">
+  <title>Escala Richter</title>
+
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/classes.css">
+
+  <script src="./js/validacao.js"></script>
+  <script src="./js/jquery-3.4.1.js"></script>
+
+
+</head>
+
+<body>
+  <h1 class="centralizar">Escala Richter</h1>
+  <form class="form-group">
+    <div id="input1">
+      <label for="altura">Amplitutude (mm):</label>
+      <input id="amplitude" name="amplitude" value="" class="form-control" type="number" step="0.01" />
+    </div>
+
+    <div id="alerta1" class="alert alert-danger" role="danger" style="display: none">
+      Preencha o primeiro campo!  
+    </div>
+
+    <div id="input2">
+      <label for="peso">Delta t (s):</label>
+      <input id="tempo" name="tempo" value="" class="form-control" type="number" step="0.1" />
+    </div>
+
+    <div id="alerta2" class="alert alert-danger" role="danger" style="display: none">
+      Preencha o segundo campo!  
+    </div>
+
+    <div id="input3">
+      <label for="magnitude">Magnitude:</label>
+      <input id="magnitude" name="magnitude" value="" class="form-control" type="number" step="0.1" disabled />
+    </div>
+
+    <br>
+    
+    <input type="button" value="Calcular" onclick="calcula()" class="btn btn-primary"/>
+    <input type="reset" value="Limpar" onclick="limpar()" class="btn btn-primary btn-warning"/>
+    
+  </form>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Magnitude Richter</th>
+        <th>Efeitos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="tipo1">
+        <td>Menor que 3,5</td>
+        <td>Geralmente não sentido, mas agravado</td>
+      </tr>
+      <tr id="tipo2">
+        <td>Entre 3,5 e 5,4</td>
+        <td>Às vezes sentido, mas raramente causa danos</td>
+      </tr>
+      <tr id="tipo3">
+        <td>Entre 5,5 e 6,0</td>
+        <td>No máximo causa pequenos danos a prédios bem construidos, mas pode danificar seriamente
+          casas mal construidas em regiões próximas
+        </td>
+      </tr>
+      <tr id="tipo4">
+        <td>Entre 6,1 e 6,9</td>
+        <td>Pode ser destrutívo em áreas em até 100km do epicentro</td>
+      </tr>
+      <tr id="tipo5">
+        <td>Entre 7,0 e 7,9</td>
+        <td>Grande terremoto.Pode causar sérios danos numa grande faixa</td>
+      </tr>
+      <tr id="tipo6">
+        <td>8,0 ou mais</td>
+        <td>Enorme terremoto. Pode causar sérios danos mesmo a centenas de km do epicentro</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+
+</html>

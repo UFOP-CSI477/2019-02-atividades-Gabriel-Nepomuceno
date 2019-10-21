@@ -1,0 +1,34 @@
+.centralizar{
+    text-align: center;
+}
+
+
+body{
+    background-image: url("../background.jpg");
+}
+h1{
+    color: white;
+}
+
+#wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header, .full-width {
+    width: 100%;
+    background: black;
+    background-size: cover;
+}
+.center-block {
+    margin: auto;
+    display: block;
+    width: 40%;
+    float:center;
+    
+}
+
+.vencedor{
+    background: green;
+}

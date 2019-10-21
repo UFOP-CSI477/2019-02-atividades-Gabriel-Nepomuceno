@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+
+<head>
+    <meta charset="utf-8" content="width=device-width, initial-scale=1">
+    <title>Atividade</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/classes.css">
+
+    <script src="./js/validacao.js"></script>
+    <script src="./js/jquery-3.4.1.js"></script>
+
+
+</head>
+
+<body>
+    <h1 class="centralizar">Atividade</h1>
+    <h4 class="centralizar">Selecione a palavra que não pertence a cada um dos grupos:</h4>
+    <br>
+    <form id="myForm" class="form-check">
+        <div>Grupo 1:
+            <div id="input1" style="margin-left: 5%">
+                <input id="triangulo" name="grupo1" type="radio" value="Triangulo" />
+                <label for="Triangulo">Triangulo</label>
+                <img src="img/grupo1/triangulo.png" width="10%">
+            </div>
+            <br>
+            <div id="input2" style="margin-left: 5%">
+                <input id="quadrado" name="grupo1" type="radio" value="Quadrado" />
+                <label for="grupo1">Quadrado</label>
+                <img src="img/grupo1/quadrado.png" width="10%">
+            </div>
+            <br>
+            <div id="input3" style="margin-left: 5%">
+                <input id="bike" name="grupo1" type="radio" value="Bike" />
+                <label for="grupo1">Bicicleta</label>
+                <img src="img/grupo1/bicicleta-infantil.png" width="10%">
+            </div>
+            <br>
+            <div id="input4" style="margin-left: 5%">
+                <input id="circulo" name="grupo1" type="radio" value="Circulo" />
+                <label for="grupo1">Circulo</label>
+                <img src="img/grupo1/circulo.png" width="10%">
+            </div>
+            <div id="alerta1" class="alert alert-danger invisivel" role="danger">
+                Você errou =(
+            </div>
+            <div id="acerto1" class="alert alert-success invisivel" role="danger">
+                Você acertou =)
+            </div>
+        </div>
+        <br>
+        <div>Grupo 2:
+            <div id="input5" style="margin-left: 5%">
+                <input id="sofa" name="grupo2" type="radio" value="Sofa" />
+                <label for="grupo2">Sofá</label>
+                <img src="img/grupo2/sofa.png" width="10%">
+
+            </div>
+            <div id="input6" style="margin-left: 5%">
+                <input id="aviao" name="grupo2" type="radio" value="Aviao" />
+                <label for="grupo2">Avião</label>
+                <img src="img/grupo2/aviao.png" width="10%">
+            </div>
+
+            <div id="input7" style="margin-left: 5%">
+                <input id="carro" name="grupo2" type="radio" value="Carro" />
+                <label for="grupo2">Carro</label>
+                <img src="img/grupo2/carro.png" width="10%">
+            </div>
+
+            <div id="input8" style="margin-left: 5%">
+                <input id="moto" name="grupo2" type="radio" value="Moto" />
+                <label for="grupo2">Moto</label>
+                <img src="img/grupo2/moto.png" width="10%">
+            </div>
+            <div id="alerta2" class="alert alert-danger invisivel" role="danger">
+                Você errou =(
+            </div>
+            <div id="acerto2" class="alert alert-success invisivel" role="danger">
+                Você acertou =)
+            </div>
+        </div>
+
+        <br>
+
+        <div>Grupo 3:
+            <div id="input9" style="margin-left: 5%">
+                <input id="bola" name="grupo3" type="radio" value="Bola" />
+                <label for="grupo3">Bola</label>
+                <img src="img/grupo3/bola.png" width="10%">
+            </div>
+            <div id="input10" style="margin-left: 5%">
+                <input id="skate" name="grupo3" type="radio" value="Skate" />
+                <img src="img/grupo3/skate.png" width="10%">
+                <label for="grupo3">Skate</label>
+            </div>
+
+            <div id="input7" style="margin-left: 5%">
+                <input id="patins" name="grupo3" type="radio" value="Patins" />
+                <label for="grupo3">Patins</label>
+                <img src="img/grupo3/patins.png" width="10%">
+            </div>
+
+            <div id="input12" style="margin-left: 5%">
+                <input id="chave" name="grupo3" type="radio" value="Chave" />
+                <label for="grupo3">Chave</label>
+                <img src="img/grupo3/chave.png" width="10%">
+                <div id="alerta3" class="alert alert-danger invisivel" role="danger">
+                    Você errou =(
+                </div>
+                <div id="acerto3" class="alert alert-success invisivel" role="danger">
+                    Você acertou =)
+                </div>
+            </div>
+        </div>
+
+        <input type="button" value="Resultado" onclick="resultado()" class="btn btn-primary" />
+
+        <input type="reset" value="Limpar" onclick="limpar()" class="btn btn-primary btn-warning" />
+
+    </form>
+
+
+</body>
+
+</html>
