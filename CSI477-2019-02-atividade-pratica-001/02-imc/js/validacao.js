@@ -24,7 +24,12 @@ function calcula(){
         else{
             $("#obesidade3").addClass("imc");
         }
+        let peso_ideal = imc*(altura*altura);
+        console.log(peso_ideal);
+        document.getElementById("result").value = peso_ideal;
     }
+
+
 }
 
 function limpar(){
