@@ -51,6 +51,7 @@ function limpar(){
 
 function resultado(){
     objetos = []
+    $('#corpo tr');
     $('#corpo tr').each(function () {
         var colunas = $(this).children();
         var obj = {
