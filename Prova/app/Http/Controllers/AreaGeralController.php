@@ -25,8 +25,7 @@ class AreaGeralController extends Controller
     }
     public function listarProfessores(Request $request)
     {
-        $area = $request->area;
-        
+        $area = $request->pesquisa;
         $professors = Professor::where('area', 'like', "%$area%")
             ->orderBy('area', 'asc')
             ->orderBy('nome', 'asc')
