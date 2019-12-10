@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Produtos</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <h1>Cadastro de Produtos</h1>
+    <form>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Nome">
+        </div>
+        <div>
+            <label for="peso">Peso:</label>
+            <input type="number" step="2" name="peso" placeholder="Peso">
+        </div>
+        <div>
+            <label for="unidadeMedida">Unidade de Medida:</label>
+            <input type="text" name="unidadeMedida" placeholder="Unidade de Medida">
+        </div>
+        <div>
+            <label for="valor">Valor:</label>
+            <input type="number" step="2" name="valor" placeholder="Valor">
+        </div>
+        <div>
+            <label for="mercado">Mercado:</label>
+            <select name="mercado" id="mercado">
+                <option selected disabled value="0">Entre com uma opcao</option>
+                <option value="1">Interno</option>
+                <option value="2">Externo</option>
+            </select>
+        </div>
+        <div>
+            <label for="fornecedor">Fornecedor:</label>
+            <select name="fornecedor" id="fornecedor">
+                <option selected disabled value="0">Entre com uma opcao</option>
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">C</option>
+                <option value="4">D</option>
+            </select>
+        </div>
+        <button>Enviar</button>
+    </form>
+
+    <br>
+    <a href="listarProdutos.html">Listar Produtos</a>
+    <a href="index.html">Sair</a>
+    <script src="" async defer></script>
+</body>
+
+</html>

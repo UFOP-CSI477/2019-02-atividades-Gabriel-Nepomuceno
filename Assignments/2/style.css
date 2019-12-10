@@ -1,0 +1,32 @@
+body {
+    font-family: Arial;
+    color: #333333;
+    background: #beb8b8;
+}
+
+input,select {
+    border-radius: 8px;
+    width: 100%;
+}
+
+a {
+    align-items: center;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button{
+    border: 1px solid #333333;
+    color: #3e89df;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
