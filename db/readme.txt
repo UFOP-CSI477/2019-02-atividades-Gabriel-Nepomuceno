@@ -1,0 +1,1 @@
+criar schema tcc antes de exutar o script
